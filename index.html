@@ -1,0 +1,41 @@
+<html>
+
+<head>
+
+    <title>Chess AI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel=stylesheet href="css/chessboard-1.0.0.min.css">
+
+</head>
+
+<body onload=drawPosition() class=container>
+
+    <h1>Chess AI</h1>
+
+    <p>This is a simple Chess AI, that uses the minimax algorithm to evaluate the next few positions. It doesn't learn from played matches or any dataset. If you scroll down you can see the next moves for the AI to choose from. The algorithm isn't perfect but it know's how to capture figures and more. If you have enough computing power make the tree deeper, so the AI becomes smarter. Now have fun play against it!</p>
+
+    <h2>Start position</h2>
+
+    <div class=row>
+        <div class=col-sm-3></div>
+        <div class=col-sm-6 id=startBoardDiv>
+            <!-- PLaceholder for start chessboard-->
+        </div>
+        <div class=col-sm-3></div>
+    </div>
+
+    <h2>Next move(s)</h2>
+
+    <div id=sampleDiv class=row>
+        <!-- PLaceholder for sample chessboards-->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/chess.min.js"></script>
+    <script src="js/chessboard-1.0.0.min.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/index.js"></script>
+
+</body></html>
